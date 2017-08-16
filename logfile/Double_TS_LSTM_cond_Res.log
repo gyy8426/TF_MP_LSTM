@@ -1,0 +1,38 @@
+Using cuDNN version 5110 on context None
+Preallocating 2437/12189 Mb (0.200000) on cuda1
+Mapped name None to device cuda1: TITAN X (Pascal) (0000:81:00.0)
+current save dir  /home/guoyuyu/results/youtube/MP_Double_LSTM_Res/save_dir/
+/home/guoyuyu/results/youtube/MP_Double_LSTM_Res/save_dir/ already exists!
+erasing everything in  /home/guoyuyu/results/youtube/MP_Double_LSTM_Res/save_dir/
+saving model config into /home/guoyuyu/results/youtube/MP_Double_LSTM_Res/save_dir/model_config.pkl
+Model Type: attention
+Dataset: youtube2text
+Command: train_model.py
+training an attention model
+/home/guoyuyu/code/code_by_myself/video_caption/MP_LSTM/model_deepRNN.py:15: UserWarning: Feeding context to output directly seems to hurt.
+  warnings.warn('Feeding context to output directly seems to hurt.')
+Loading data
+loading youtube2text googlenet features
+uneven minibath chunking, overall 64, last one 12
+uneven minibath chunking, overall 200, last one 91
+uneven minibath chunking, overall 200, last one 168
+init params
+<bound method OrderedDict.keys of OrderedDict([('Wemb', Wemb), ('tu_lstm_W', tu_lstm_W), ('tu_lstm_U', tu_lstm_U), ('tu_lstm_b', tu_lstm_b), ('mu_lstm_W', mu_lstm_W), ('mu_lstm_V', mu_lstm_V), ('mu_lstm_U', mu_lstm_U), ('mu_lstm_b', mu_lstm_b), ('ff_logit_lstm_W', ff_logit_lstm_W), ('ff_logit_lstm_b', ff_logit_lstm_b)])>
+buliding sampler
+Building f_init... Done
+building f_next...
+Done
+building f_log_probs
+compute grad
+build train fns
+compilation took 17.4987 sec
+Optimization
+Epoch  0
+Epoch  0 Update  10 Train cost mean so far 50.7260704041 fetching data time spent (sec) 0.058 update time spent (sec) 0.433
+Epoch  0 Update  20 Train cost mean so far 45.578289032 fetching data time spent (sec) 0.054 update time spent (sec) 0.359
+Epoch  0 Update  30 Train cost mean so far 42.9721260071 fetching data time spent (sec) 0.053 update time spent (sec) 0.364
+Epoch  0 Update  40 Train cost mean so far 42.8328666687 fetching data time spent (sec) 0.051 update time spent (sec) 0.413
+Epoch  0 Update  50 Train cost mean so far 44.4898376465 fetching data time spent (sec) 0.054 update time spent (sec) 0.497
+Epoch  0 Update  60 Train cost mean so far 39.2640457153 fetching data time spent (sec) 0.047 update time spent (sec) 0.422
+Epoch  0 Update  70 Train cost mean so far 47.4527397156 fetching data time spent (sec) 0.06 update time spent (sec) 0.406
+Epoch  0 Update  80 Train cost mean so far 43.4894714355 fetching data time spent (sec) 0.061 update time spent (sec) 0.438
